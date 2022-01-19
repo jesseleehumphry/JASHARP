@@ -13,12 +13,15 @@ The mod will intend to address the following shortcomings that JA+ and JA++ had 
 * Ability to use some GalaxyRP-esque features, like a /me text emote
 * Expose more animations to the /am system
 * Customize the submittable length of text in the server
+* Pseudo-account system that tracks by IP, or possibility of SQL-based account
+   * Account tracks kills, deaths, total time played, and a player name that a player can claim or change at any time. This does not take on the character name.
+   * Set up a database that can push this to a JSON object, which can be gathered via REST verbs or displayed in an on-server HTML page to be embedded in an iframe.
 
 
 ## Client-side
 * Dramatically increase the customization selection limitation based on the player's hardware or desires.
 * Tie text triggers to colors via .cfg
-* * Player can link an inline phrase or symbol that would automatically trigger a temporary change in color or a permanent one.
+  * Player can link an inline phrase or symbol that would automatically trigger a temporary change in color or a permanent one.
 * 
 
 ## compilation
