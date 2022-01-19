@@ -6,15 +6,15 @@ The mod will intend to address the following shortcomings that JA+ and JA++ had 
 
 ## Server-Side
 
-* Ability to auto-login all players into the 'clan chat'
+* Ability to auto-login all players into a default clan chat if they don't have a cp_clanPwd set. 
 * Ability to grant particular commands, like /ammerc and /amtele, to all players regardless of admin login level
-* Alternatively, auto-login all players into the admin level that has these commands
-* Ability to set the clan tag
+    * Alternatively, auto-login all players into the admin level that has these commands
+* Ability to set the clan tag, limit the number of varied clan channels, and automatically assign the current channel to the <> tag.
 * Ability to use some GalaxyRP-esque features, like a /me text emote
 * Expose more animations to the /am system
 * Customize the submittable length of text in the server
 * Pseudo-account system that tracks by IP, or possibility of SQL-based account
-   * Account tracks kills, deaths, total time played, and a player name that a player can claim or change at any time. This does not take on the character name.
+   * Account tracks kills, deaths, total time played, and a player name that a player can claim or change at any time. This does not take on the in-game display name.
    * Set up a database that can push this to a JSON object, which can be gathered via REST verbs or displayed in an on-server HTML page to be embedded in an iframe.
 
 
@@ -24,29 +24,11 @@ The mod will intend to address the following shortcomings that JA+ and JA++ had 
   * Player can link an inline phrase or symbol that would automatically trigger a temporary change in color or a permanent one.
 * 
 
-## compilation
+# Roadmap
 
-* Python 3.9.1
-* [Scons](https://github.com/SCons/scons)
-
-e.g. `scons debug=1 force32=1`
-
-Windows
-
-* [TDM-GCC](https://jmeubank.github.io/tdm-gcc/) for non-MSVC
-* If you wish to use MSVC with JA++, specify `tools=default` to scons
-
-Options
-
-* `force32` 1 to build a 32-bit binary on a 64-bit machine
-* `debug` 1 to generate debug information, 2 to also optimise code
-* `no_sql` 1 to disable MySQL/SQLite support 
-* `no_crashhandler` 1 to disable the crash handler/logger functionality
-
-Environment Variables
-
-* `NO_SSE` 1 to not generate SSE2 instructions - closer to basejka. This is used for official builds
-* `MORE_WARNINGS` 1 to enable more compiler warnings
+## Server-side
+* Expansion of animations to accomodate roleplaying groups
+* Granularity of admin powers for finer control over server staff
 
 ## contributors
 * JesseLeeHumphry (lead)
